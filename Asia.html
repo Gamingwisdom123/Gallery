@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 10px;
+            
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            
+        
+        }
+        .Img_1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+
+
+        }
+        img{
+            border-radius: 10px;
+            width: 500px;
+            height: 500px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 2px solid #ccc;
+        }
+        header{
+            text-align: center;
+            font-size: 2em;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #ffffff;
+            
+        }
+        .gallery{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .wide{
+            grid-column: span 2;
+        }
+        .featured{
+            grid-row: span 2;
+        }
+        .img-container{
+            overflow: hidden;
+        }
+        body{
+            background:conic-gradient(from 0deg, #e0e0e0,  #ffffff);
+            font-family: 'Arial', sans-serif;
+        }
+        footer{
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9em;
+            color: rgb(121, 121, 121);
+            background-color: #ffffff;
+        }
+        nav a{
+            text-decoration: none;
+            color: #555;
+            margin: 0 15px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        nav a:hover{
+            color: lightblue;
+
+
+        }
+        nav{
+            padding: 20px 0;
+        }
+        header h1{
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Holiday Photos</h1>
+    <nav>
+        <a href="">Europe</a> 
+        <a href="">Asia</a> 
+        <a href="">Africa</a>
+        <a href="">South America</a>
+        <a href="">North America</a>
+        <a href="">Oceania</a>
+
+    </nav>
+    </header>
+    <div class="gallery">
+  
+<div class="img-container">
+
+<img src="https://tse4.mm.bing.net/th/id/OIP._KD_ZZ5_l9-QTBX_l0vDxgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+
+<img src="https://a.cdn-hotels.com/gdcs/production192/d858/acaa156c-fb7b-4e67-80d1-2a5e1b1340b4.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" alt="">
+
+<img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/01/31033842/Phuket-Thailand-809x455.jpg?tr=w-1920" alt="">
+<img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2023/02/02103347/most-romantic-destinations-southeast-asia-luxury-resorts-honeymoon-wedding-valentines-day.jpg" alt="">
+<img src="https://www.telegraph.co.uk/content/dam/Travel/hotels/asia/indonesia/bali/amandari-bali-view.jpg?imwidth=450" alt="">
+<img src="https://tse4.mm.bing.net/th/id/OIP.t1MrnPIMSVXhYBWLpv77bgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+i
+
+</div>
+</div>
+<footer>© 2026 My Beach Gallery</footer>
+
+
+
+
+</body>
+</html>
