@@ -12,10 +12,9 @@
         }
         .gallery {
             margin: 10px;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
-            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             
         }
         .gallery img {
@@ -51,18 +50,12 @@
             background-color: #ffffff;
             
         }
-        .gallery{
-            max-width: 1200px;
-            margin: auto;
-        }
-        .wide{
-            grid-column: span 2;
-        }
-        .featured{
-            grid-row: span 2;
-        }
+        
+
         .img-container{
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
         }
         body{
             background:conic-gradient(from 0deg, #e0e0e0,  #ffffff);
@@ -94,17 +87,73 @@
             margin-bottom: 20px;
 
         }
+              
+    #Fact{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: #333;
+        animation: colorchange 2s infinite ;
+        transition: ease;
+        animation-timing-function: ease-in-out;
+
+
+    }
+    .gallery2{
+        display: flex;
+
+    }
+    .gallery2 .gallery-item img:hover{
+         transform: scale(0.9);
+            transition: transform 0.3s ease;
+
+
+    }
+.gallery2 .gallery-item img{
+    width: 300px;
+    height: 300px;
+}
+.gallery2 .gallery-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(6, 78, 106)
+}
+@keyframes colorchange{
+    0%{
+        color: rgb(126, 188, 212);
+    }
+    25%{
+        color: rgb(100, 153, 173);
+    }
+    50%{
+        color: rgb(63, 95, 107) ;
+    }
+    75%{
+        color: rgb(31, 45, 50);
+    }
+    100%{
+        color: rgb(10, 14, 16);
+    }
+
+}
+
     </style>
 </head>
 <body>
     <header><h1>Holiday Photos</h1>
     <nav>
-        <a href="">Europe</a> 
-        <a href="">Asia</a> 
-        <a href="">Africa</a>
-        <a href="">South America</a>
-        <a href="">North America</a>
-        <a href="">Oceania</a>
+        <a href="Europe.html">Europe</a> 
+        <a href="Asia.html">Asia</a> 
+        <a href="Africa.html">Africa</a>
+        <a href="South America.html">South America</a>
+        <a href="North America.html">North America</a>
+        <a href="Oceania.html">Oceania</a>
+        <a href="gallery.html">Gallery</a>
 
     </nav>
     </header>
@@ -120,11 +169,38 @@
 <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2023/02/02103347/most-romantic-destinations-southeast-asia-luxury-resorts-honeymoon-wedding-valentines-day.jpg" alt="">
 <img src="https://www.telegraph.co.uk/content/dam/Travel/hotels/asia/indonesia/bali/amandari-bali-view.jpg?imwidth=450" alt="">
 <img src="https://tse4.mm.bing.net/th/id/OIP.t1MrnPIMSVXhYBWLpv77bgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
-i
+<img src="https://tse3.mm.bing.net/th/id/OIP.2MtrIecn7LCq_6-TnxjyQQHaF7?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<img src="https://cdn.destguides.com/files/store/itinerarystop/41413/background_image/jpeg_large_202112291737-563bc8b86efed04b026b5228f26bb9ea.jpeg" alt="">
+<img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/04/Qutub-Minar-Delhi2.jpg?w=1200&ssl=1" alt="">
+<img src="https://tse4.mm.bing.net/th/id/OIP.tDDb3F5fYM0U6hWEEi83ewHaEK?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<img src="https://thetripgoeson.com/wp-content/uploads/2021/05/bagan-1577961_1280.jpg" alt="">
+<img src="https://tse3.mm.bing.net/th/id/OIP.Qce5aOOYZGj3pavt80-DJwHaE7?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<img src="https://tse4.mm.bing.net/th/id/OIP.hhKF34UMBwxybv4c-jPVcAHaLz?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<img src="https://www.kids-world-travel-guide.com/images/singapore_merlion_SeanHsu_ssk.jpg" alt="">
+<img src="https://tse4.mm.bing.net/th/id/OIP.nyGepr3S-nRnPhGF89Fm2wHaE7?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<img src="https://th.bing.com/th/id/R.e4111bf61a3e80650fe762eba255c77b?rik=ws%2f2S4CVFOo1Dw&riu=http%3a%2f%2fwebquesttravel.weebly.com%2fuploads%2f1%2f5%2f5%2f3%2f15531306%2f4281065_orig.jpg%3f0&ehk=yrF65NYwelPiuxJYOj0ohcYwG6xUyzOqt%2fA4W7kHfAY%3d&risl=&pid=ImgRaw&r=0" alt="">
+
+</div>
+<div class="gallery2">
+    <div class="gallery-item">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/017/791/706/original/4k-time-lapse-of-taj-mahal-an-ivory-white-marble-mausoleum-on-the-south-bank-of-the-yamuna-river-in-agra-uttar-pradesh-india-free-video.jpg" alt="Sydney, Australia">
+        <p>Taj Mahal,india</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://wallpapercave.com/wp/wp4107221.jpg" alt="Queenstown, New Zealand">
+        <p>Great Wall of China</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.gsSA1TcM9ut9bIW7VTcnZQHaEr?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bora Bora, French Polynesia">
+        <p>Mount Fuji, Japan</p>
 
 </div>
 </div>
-<footer>© 2026 My Beach Gallery</footer>
+
+</div>
+</div>
+<p id="Fact">Fun Fact: Asia is home to the world's largest country, Russia.</p>
+<footer><marquee behavior="" direction="">© 2026 My Beach Gallery </marquee></footer>
 
 
 

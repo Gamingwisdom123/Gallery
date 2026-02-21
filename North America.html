@@ -12,10 +12,9 @@
         }
         .gallery {
             margin: 10px;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
-            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             
         }
         .gallery img {
@@ -51,18 +50,12 @@
             background-color: #ffffff;
             
         }
-        .gallery{
-            max-width: 1200px;
-            margin: auto;
-        }
-        .wide{
-            grid-column: span 2;
-        }
-        .featured{
-            grid-row: span 2;
-        }
+        
+
         .img-container{
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
         }
         body{
             background:conic-gradient(from 0deg, #e0e0e0,  #ffffff);
@@ -94,17 +87,72 @@
             margin-bottom: 20px;
 
         }
+         #Fact{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: #333;
+        animation: colorchange 2s infinite ;
+        transition: ease;
+        animation-timing-function: ease-in-out;
+
+
+    }
+    .gallery2{
+        display: flex;
+
+    }
+    .gallery2 .gallery-item img:hover{
+         transform: scale(0.9);
+            transition: transform 0.3s ease;
+
+
+    }
+.gallery2 .gallery-item img{
+    width: 300px;
+    height: 300px;
+}
+.gallery2 .gallery-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(6, 78, 106)
+}
+@keyframes colorchange{
+    0%{
+        color: rgb(126, 188, 212);
+    }
+    25%{
+        color: rgb(100, 153, 173);
+    }
+    50%{
+        color: rgb(63, 95, 107) ;
+    }
+    75%{
+        color: rgb(31, 45, 50);
+    }
+    100%{
+        color: rgb(10, 14, 16);
+    }
+
+}
     </style>
+       
 </head>
 <body>
     <header><h1>Holiday Photos</h1>
     <nav>
-        <a href="">Europe</a> 
-        <a href="">Asia</a> 
-        <a href="">Africa</a>
-        <a href="">South America</a>
-        <a href="">North America</a>
-        <a href="">Oceania</a>
+       <a href="gallery.html">Gallery</a>
+       <a href="Europe.html">Europe</a> 
+        <a href="Asia.html">Asia</a> 
+        <a href="Africa.html">Africa</a>
+        <a href="South America.html">South America</a>
+        <a href="North America.html">North America</a>
+        <a href="Oceania.html">Oceania</a>
 
     </nav>
     </header>
@@ -117,6 +165,25 @@
 <img src="https://tse3.mm.bing.net/th/id/OIP.T57AQ_gJDR1RNuB8x2_8dQHaEf?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
 <img src="https://tse3.mm.bing.net/th/id/OIP.E5uwchj1oezJfDFXc0CpagHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
 <img src="https://tse1.mm.bing.net/th/id/OIP.3aW6r4VhgQxe23hGuBknMwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+
+
+</div>  
+</div>
+<div class="gallery2">
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Statue_of_Liberty_from_front.jpg" alt="Statue of Liberty, New York">
+        <p>Statue of Liberty, New York</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.RGekB3x2aFfqxaBSDb1NdAHaE5?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Queenstown, New Zealand">
+        <p>Niagara Falls, New York/Canda</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://cdn.britannica.com/16/60016-050-5D8447C8/peaks-Bora-Bora-Society-Islands-lagoon-French-Polynesia.jpg" alt="Bora Bora, French Polynesia">
+        <p>Chichen Itza, Mexico</p>
+
+</div>
+</div>
 <h3>Random Facts:</h3>
 <ul>
     <li>North America is the third largest continent by area, covering approximately 24.7 million square kilometers.</li>
@@ -124,9 +191,7 @@
     <li>North America has a rich cultural history, with indigenous peoples inhabiting the land for thousands of years before European colonization.</li>
     <li>The continent is known for its iconic landmarks, such as the Statue of Liberty, Niagara Falls, and the Grand Canyon.</li>
     <li>North America is a major economic powerhouse, with the United States being the largest economy in the world.</li>
-</div>  
-</div>
-<footer>© 2026 My Beach Gallery</footer>
+<footer> <marquee behavior="" direction="">© 2026 My Beach Gallery </marquee></footer>
 
 
 

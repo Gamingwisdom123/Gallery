@@ -12,10 +12,9 @@
         }
         .gallery {
             margin: 10px;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
-            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             
         }
         .gallery img {
@@ -51,18 +50,12 @@
             background-color: #ffffff;
             
         }
-        .gallery{
-            max-width: 1200px;
-            margin: auto;
-        }
-        .wide{
-            grid-column: span 2;
-        }
-        .featured{
-            grid-row: span 2;
-        }
+        
+
         .img-container{
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
         }
         body{
             background:conic-gradient(from 0deg, #e0e0e0,  #ffffff);
@@ -94,17 +87,72 @@
             margin-bottom: 20px;
 
         }
+         #Fact{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: #333;
+        animation: colorchange 2s infinite ;
+        transition: ease;
+        animation-timing-function: ease-in-out;
+
+
+    }
+    .gallery2{
+        display: flex;
+
+    }
+    .gallery2 .gallery-item img:hover{
+         transform: scale(0.9);
+            transition: transform 0.3s ease;
+
+
+    }
+.gallery2 .gallery-item img{
+    width: 300px;
+    height: 300px;
+}
+.gallery2 .gallery-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(6, 78, 106)
+}
+@keyframes colorchange{
+    0%{
+        color: rgb(126, 188, 212);
+    }
+    25%{
+        color: rgb(100, 153, 173);
+    }
+    50%{
+        color: rgb(63, 95, 107) ;
+    }
+    75%{
+        color: rgb(31, 45, 50);
+    }
+    100%{
+        color: rgb(10, 14, 16);
+    }
+
+}
     </style>
 </head>
 <body>
     <header><h1>Holiday Photos</h1>
     <nav>
-        <a href="">Europe</a> 
-        <a href="">Asia</a> 
-        <a href="">Africa</a>
-        <a href="">South America</a>
-        <a href="">North America</a>
-        <a href="">Oceania</a>
+      <a href="Europe.html">Europe</a> 
+        <a href="Asia.html">Asia</a> 
+        <a href="Africa.html">Africa</a>
+        <a href="South America.html">South America</a>
+        <a href="North America.html">North America</a>
+        <a href="Oceania.html">Oceania</a>
+        <a href="gallery.html">Gallery</a>
+
 
     </nav>
     </header>
@@ -120,7 +168,25 @@
 <img src="https://a.cdn-hotels.com/gdcs/production174/d1670/e8fe81a8-ae46-42f7-b6a5-ff4850071781.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="">
 </div>  
 </div>
-<footer>© 2026 My Beach Gallery</footer>
+<div class="gallery2">
+    <div class="gallery-item">
+        <img src="https://th.bing.com/th/id/R.e0b56103179474f6781fc7a1801cc19a?rik=hBPYLvmvWQ5WBA&pid=ImgRaw&r=0" alt="Sydney, Australia">
+        <p>Christ the Redeemer (Brazil)</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://i.natgeofe.com/n/819ea774-aa80-435e-af5a-ae56efee7ce3/92491_4x3.jpg" alt="Queenstown, New Zealand">
+<p>	Machu Picchu (Peru)</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://res.cloudinary.com/friendly-planet/image/fetch/q_auto,f_auto/https://www.friendlyplanet.com/media/gallery/south_america/iguazu_falls/iguazu-falls-devils-throat-rainbow.2000x1325.bmp" alt="Bora Bora, French Polynesia">
+        <p>Iguazu Falls (Argentina/Brazil)</p>
+
+</div>
+</div>
+
+
+<p id="Fact">Fun Fact: South America is home to the Amazon rainforest, the world's largest tropical rainforest.</p>
+<footer><marquee behavior="" direction="">© 2026 My Beach Gallery</marquee></footer>
 
 
 
